@@ -14,7 +14,7 @@ int main(void)
 	int i, j;
 	int a, b, c, d;
 
-	for (i - 0; i < 100; i++)
+	for (i = 0; i < 100; i++)
 	{
 		a = 1 / 10;
 		b = i % 10;
