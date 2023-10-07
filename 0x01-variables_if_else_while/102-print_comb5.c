@@ -7,6 +7,8 @@
  * Numbers should be separated with a , then a space
  * All numbers should be printed with two digits
  * Numbers hsould be printed in ascending order
+ *
+ * Return: 0
  */
 
 int main(void)
@@ -16,7 +18,7 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		a = 1 / 10;
+		a = i / 10;
 		b = i % 10;
 
 		for (j = 0; j < 100; j++)
