@@ -3,7 +3,8 @@
 /**
  * _islower - Entry point
  *
- *Description: checks for lower case characters
+ * Description: checks for lower case characters
+ * @c: letter to check
  *
  * Return: 1 if lower else 0
  */
