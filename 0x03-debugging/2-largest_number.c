@@ -1,18 +1,17 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-* main - Entry point
+* largest_number - Entry point
 *
 * Description: Prints the largest of 3 integers
 * @a: first number
 * @b: second number
 * @c: third number
 *
-* Return: 0
+* Return: largest
 */
 
-int main(int a, int b, int c)
+int largest_number(int a, int b, int c)
 {
 	int largest;
 
