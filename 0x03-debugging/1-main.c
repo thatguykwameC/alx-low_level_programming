@@ -1,16 +1,13 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
-*
-* Description: Causes an infinite loop
-*
+* main - Causes an infinite loop
 * Return: 0
 */
 
 int main(void)
 {
-	int i;
+i	int i;
 
 	printf("Infinite loop incoming :(\n");
 	/**
