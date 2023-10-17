@@ -1,5 +1,4 @@
-#include "main.h"
-
+#include "main.h" 
 /**
  * _strcopy - Copies a string from src to dest
  * @dest: destinaton buffer
@@ -7,7 +6,7 @@
  * Return: dest
  */
 
-char *_strcopy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
