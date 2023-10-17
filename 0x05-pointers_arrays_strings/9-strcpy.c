@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 /**
  * _strcopy - Copies a string from src to dest
  * @dest: destinaton buffer
