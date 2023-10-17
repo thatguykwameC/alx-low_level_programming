@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * puts2 - prints every other char at even positions
@@ -9,12 +10,19 @@
 
 void puts2(char *str)
 {
-	int i;
+	unsigned short i;
 
-	for (i = 0; str[1] != '\0'; i++)
+	for (i = 0; i < strlen(str); i += 2)
 	{
-		if (i % 2 == 0)
+		if (str == NULL)
+		{
+			_putchar(' ');
+			break;
+		}
+		else
+		{
 			_putchar(str[i]);
+		}
 	}
 	_putchar('\n');
 }
