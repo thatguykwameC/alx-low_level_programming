@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 
 	char_assign = malloc(sizeof(char) * size);
 
-	if (size == 0 || char_assign == NULL) /*Handles invalid input*/
+	if (size == 0 || char_assign == NULL) /*checks for invalid inputs*/
 		return (NULL);
 
 	for (i = 0; i < size; i++)
