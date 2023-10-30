@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	if (str == NULL || str_duplicate == NULL)
 		return (NULL);
 
-	for (j = 0; j < i; j++)
+	for (j = 0; str[j]; j++)
 		str_duplicate[j] = str[j];
 
 	return (str_duplicate);
