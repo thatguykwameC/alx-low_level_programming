@@ -4,18 +4,25 @@
 /**
  * free_grid - frees up memory allocated by 2D grid
  * @grid: 2D grid
- * @height: Height of grid
+ * @height: height of grid
  *
  * Return: void
  */
 
 void free_grid(int **grid, int height)
 {
-	int i;
-
-	for (i = 0; i < height; i++)
-		free(grid[i]);
+	if (grid == NULL)
+		return;
+	else
+	{
+		unsigned short i = 0;
+		
+		for (i = 0; i < height; i++)
+		{
+			if (grid[i] != NULL)
+				free(grid[i]);
+		}
+	}
+	
 	free(grid);
-
-	grid = NULL;
 }
