@@ -32,7 +32,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		length_s2++;
 
 	/*Calculate the length of the resulting string*/
-	total_length = length_s1 + n;
+	if (n >= length_s2)
+		total_length = length_s1 + length_s2;
+	else
+		total_length = length_s1 + n;
 
 	/*Allocate memory for the concatenated string*/
 	newString = (char *)malloc(total_length + 1);
@@ -42,10 +45,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		for (i = 0; i <= (length_s1 - 1); i++)
 			newString[i] = s1[i];
 
-		for (i = 0; i <= (n - 1); i++)
+		for (i = 0; i <= (n - 1) && i < length_s2; i++)
 			newString[i + length_s1] = s2[i];
 
-		newString[total_length] = '\0';
+		newString[i + length_s1] = '\0';
 	}
 
 	return (newString);
