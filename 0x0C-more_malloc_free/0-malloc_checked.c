@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 
-/*
- * malloc_checked - it allocates memory
- * Description: if it fails, terminate process
- * with status of 98 elsew return a pointer
+/**
+ * malloc_checked - it allocates memory, if it fails
+ * terminate process with status of 98 else return a pointer
  * @b: size of memory to be allocated
  *
  * Return: a pointer @p to the allocated memory
