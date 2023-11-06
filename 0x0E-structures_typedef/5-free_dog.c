@@ -11,7 +11,7 @@ void free_dog(dog_t *d)
 	if (d == NULL)
 		return;
 
-	/*Frees up allocated memory space for nae and owner*/
+	/*Frees up allocated memory space for name and owner*/
 	free(d->name);
 	free(d->owner);
 	free(d);
