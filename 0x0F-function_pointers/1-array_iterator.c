@@ -12,6 +12,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t j;
 
+	/*Checks if invalid arguements are passed*/
 	if (array == NULL || action == NULL)
 		return;
 
