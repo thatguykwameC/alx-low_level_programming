@@ -13,6 +13,7 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node;
+	list_t *holder = *head;
 	int length = 0;
 
 	/* Handles calculation of input string length */
@@ -25,11 +26,23 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (!new_node)
 		return (NULL);
 
-	/*Adds new_node to the end of list_t */
+	/* Adds new_node to the end of list_t */
 	new_node->str = strdup(str);
 	new_node->len = length;
-	new_node->next = *head;
-	*head = new_node;
+	new_node->next = NULL;
 
-	return (*head);
+	/* Checks if list is empty */
+	if (*head == NULL)
+	{
+		*head = new_node;
+		return (new_node);
+	}
+
+	/* Iterates over the list, to find the last node */
+	while (holder->next)
+		holder = holder->next;
+
+	holder->next = new_node;
+
+	return (new_node);
 }
