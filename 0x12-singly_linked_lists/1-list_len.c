@@ -11,7 +11,8 @@
 size_t list_len(const list_t *h)
 {
 	size_t node_counter = 0;
-
+	
+	/* Gets number of element in list_t */
 	while (h)
 	{
 		node_counter++;
