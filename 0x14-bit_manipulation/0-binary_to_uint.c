@@ -10,23 +10,19 @@
 
 unsigned int binary_to_unit(const char *b)
 {
-	int length, binaryNum;
 	unsigned int num;
 
 	if (b == NULL)
 		return (0);
 
-	num = 0;
-
-	for (length = 0; b[length] != '\0'; length++)
-		;
-
-	for (length--, binaryNum = 1; length >= 0; length--, binaryNum *= 2)
+	while (*b != '\0')
 	{
-		if (b[length] != '0' && b[length] != '1')
+		if (*b != '0' && *b != '1')
 			return (0);
-		if (b[length] & 1)
-			num += binaryNum;
+
+		num = (num * 2) + (*b - '0');
+		b++;
 	}
+
 	return (num);
 }
