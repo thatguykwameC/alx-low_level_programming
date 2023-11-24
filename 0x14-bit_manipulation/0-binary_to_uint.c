@@ -13,7 +13,7 @@ unsigned int binary_to_unit(const char *b)
 	int length, binaryNum;
 	unsigned int num;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
 
 	num = 0;
