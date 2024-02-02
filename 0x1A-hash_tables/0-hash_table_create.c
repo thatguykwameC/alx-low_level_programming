@@ -9,9 +9,8 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	/* Allocate memory for the hash table structure */
 	hash_table_t *hash_tab;
-
+	/* Allocate memory for the hash table structure */
 	hash_tab = (hash_table_t *)malloc(sizeof(hash_table_t));
 
 	if (hash_tab != NULL)
