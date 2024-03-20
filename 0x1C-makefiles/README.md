@@ -1,7 +1,5 @@
 ### Makefiles
 
-## Learning Objectives:
-
 1. **Make and Makefiles:**
 
    - **Definition:** Make is a build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles.
